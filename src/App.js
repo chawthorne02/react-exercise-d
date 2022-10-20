@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+
+import BookmarkingApp from './components/BookmarkingApp';
+import Container from 'react-bootstrap/Container';
 import './App.css';
+
+const INITIAL_TAG = {
+  id: 1,
+  url: "https://www.npmjs.com/package/nanoid",
+  tag: "Nano ID",
+  title: "Nano ID Page",
+};
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className="App">
+      
+
+      <BookmarkingApp />
+    </Container>
   );
 }
 
